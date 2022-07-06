@@ -20,7 +20,9 @@ let k = p;
 then dp[i][j] = min distance i to j when we can pass through 1 to p - 1.
 Now, just see if we can pass through p then can we minimise the distance.
 dp[i][j] = Math.min(dp[i][j], dp[i][p] + dp[p][j]).
-
+	JUST KEEP THIS THING IN MIND THAT HAVE WE CALCULATED THE CORRECR VALUE OF dp[i][p] and dp[p][j]
+	AND THE ANSWER IS YES BECAUSE dp[i][p] is min val i to p using 1,2,3,...p - 1. SAME GOES TO dp[p][j].
+	
 T.C. -> O(N * N * N)
 -> It can handle negative weights but cannot handle negative cycles.
 
