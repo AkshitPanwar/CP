@@ -1,5 +1,5 @@
 
-    int N = 510;
+    		int N = 510;
 		int dp[][] = new int[N][N];
 		int INF = (int)1e9 + 10;
 		for(int i = 0; i < N; i++)
